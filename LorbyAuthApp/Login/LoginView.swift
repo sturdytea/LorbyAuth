@@ -17,18 +17,9 @@ class LoginView: UIView {
         return imageView
     }()
     
-    let welcomeText: UILabel = {
-        let label = UILabel()
-        label.font = .customFont(.medium, size: 24)
-        label.text = "Вэлком бэк!"
-        label.textAlignment = .center
-        label.textColor = .darkGray
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
+    let welcomeText = LargeTitle("Вэлком бэк!")
     let loginField = PrimaryTextField("Введи туда-сюда логин")
-    let passwordField = PrimaryTextField("Пароль (тоже введи)")
+    let passwordField = PrimaryTextField("Пароль (тоже введи)", isHidden: true)
     let loginButton = PrimaryButton("Войти")
     let registerButton = SecondaryButton("У меня еще нет аккаунта")
     
