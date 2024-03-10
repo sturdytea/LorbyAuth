@@ -12,6 +12,23 @@
 		B890686B2B95CB8E00DEECBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89068692B95CB8E00DEECBD /* LaunchScreen.storyboard */; };
 		B89068732B95CC4E00DEECBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068722B95CC4E00DEECBD /* LoginViewController.swift */; };
 		B89068782B95CD0100DEECBD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068772B95CD0100DEECBD /* LoginView.swift */; };
+		B89068822B99DE8600DEECBD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068812B99DE8600DEECBD /* RegisterViewController.swift */; };
+		B89068842B99DEA800DEECBD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068832B99DEA800DEECBD /* RegisterView.swift */; };
+		B89068872B99DF7A00DEECBD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068862B99DF7A00DEECBD /* User.swift */; };
+		B890688A2B99E01B00DEECBD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068892B99E01B00DEECBD /* DataManager.swift */; };
+		B890688D2B99E38400DEECBD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890688C2B99E38300DEECBD /* PrimaryTextField.swift */; };
+		B89068902B99E4A300DEECBD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890688F2B99E4A300DEECBD /* UIColor.swift */; };
+		B890689B2B99E70600DEECBD /* MPLUS1p-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89068932B99E70600DEECBD /* MPLUS1p-ExtraBold.ttf */; };
+		B890689C2B99E70600DEECBD /* MPLUS1p-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89068942B99E70600DEECBD /* MPLUS1p-Light.ttf */; };
+		B890689D2B99E70600DEECBD /* MPLUS1p-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89068952B99E70600DEECBD /* MPLUS1p-Thin.ttf */; };
+		B890689E2B99E70600DEECBD /* MPLUS1p-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89068962B99E70600DEECBD /* MPLUS1p-Bold.ttf */; };
+		B890689F2B99E70600DEECBD /* MPLUS1p-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89068972B99E70600DEECBD /* MPLUS1p-Black.ttf */; };
+		B89068A02B99E70600DEECBD /* MPLUS1p-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89068982B99E70600DEECBD /* MPLUS1p-Medium.ttf */; };
+		B89068A12B99E70600DEECBD /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B89068992B99E70600DEECBD /* OFL.txt */; };
+		B89068A22B99E70600DEECBD /* MPLUS1p-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B890689A2B99E70600DEECBD /* MPLUS1p-Regular.ttf */; };
+		B89068A42B99E71D00DEECBD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068A32B99E71D00DEECBD /* UIFont.swift */; };
+		B89068A62B9DC51C00DEECBD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068A52B9DC51C00DEECBD /* PrimaryButton.swift */; };
+		B89068A82B9DC87C00DEECBD /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068A72B9DC87C00DEECBD /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +39,23 @@
 		B890686C2B95CB8E00DEECBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B89068722B95CC4E00DEECBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B89068772B95CD0100DEECBD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B89068812B99DE8600DEECBD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B89068832B99DEA800DEECBD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		B89068862B99DF7A00DEECBD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B89068892B99E01B00DEECBD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B890688C2B99E38300DEECBD /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		B890688F2B99E4A300DEECBD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		B89068932B99E70600DEECBD /* MPLUS1p-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B89068942B99E70600DEECBD /* MPLUS1p-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Light.ttf"; sourceTree = "<group>"; };
+		B89068952B99E70600DEECBD /* MPLUS1p-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Thin.ttf"; sourceTree = "<group>"; };
+		B89068962B99E70600DEECBD /* MPLUS1p-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Bold.ttf"; sourceTree = "<group>"; };
+		B89068972B99E70600DEECBD /* MPLUS1p-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Black.ttf"; sourceTree = "<group>"; };
+		B89068982B99E70600DEECBD /* MPLUS1p-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Medium.ttf"; sourceTree = "<group>"; };
+		B89068992B99E70600DEECBD /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B890689A2B99E70600DEECBD /* MPLUS1p-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUS1p-Regular.ttf"; sourceTree = "<group>"; };
+		B89068A32B99E71D00DEECBD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		B89068A52B9DC51C00DEECBD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		B89068A72B9DC87C00DEECBD /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +91,7 @@
 				B890687C2B95D6C800DEECBD /* Common */,
 				B890687D2B95D6CE00DEECBD /* Core */,
 				B890687F2B95D6F400DEECBD /* Login */,
+				B89068802B99DE6700DEECBD /* Register */,
 				B890687B2B95CFAD00DEECBD /* Resources */,
 				B890685E2B95CB8B00DEECBD /* AppDelegate.swift */,
 				B89068692B95CB8E00DEECBD /* LaunchScreen.storyboard */,
@@ -76,6 +111,9 @@
 		B890687C2B95D6C800DEECBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B890688B2B99E35400DEECBD /* CustomViews */,
+				B89068912B99E6BE00DEECBD /* Fonts */,
+				B890688E2B99E48A00DEECBD /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -83,6 +121,8 @@
 		B890687D2B95D6CE00DEECBD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B89068852B99DED300DEECBD /* Models */,
+				B89068882B99DF8400DEECBD /* Networking */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -94,6 +134,73 @@
 				B89068772B95CD0100DEECBD /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B89068802B99DE6700DEECBD /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B89068812B99DE8600DEECBD /* RegisterViewController.swift */,
+				B89068832B99DEA800DEECBD /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B89068852B99DED300DEECBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B89068862B99DF7A00DEECBD /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B89068882B99DF8400DEECBD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B89068892B99E01B00DEECBD /* DataManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B890688B2B99E35400DEECBD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B890688C2B99E38300DEECBD /* PrimaryTextField.swift */,
+				B89068A52B9DC51C00DEECBD /* PrimaryButton.swift */,
+				B89068A72B9DC87C00DEECBD /* SecondaryButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B890688E2B99E48A00DEECBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B890688F2B99E4A300DEECBD /* UIColor.swift */,
+				B89068A32B99E71D00DEECBD /* UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B89068912B99E6BE00DEECBD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B89068922B99E70600DEECBD /* Mplus1p */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B89068922B99E70600DEECBD /* Mplus1p */ = {
+			isa = PBXGroup;
+			children = (
+				B89068932B99E70600DEECBD /* MPLUS1p-ExtraBold.ttf */,
+				B89068942B99E70600DEECBD /* MPLUS1p-Light.ttf */,
+				B89068952B99E70600DEECBD /* MPLUS1p-Thin.ttf */,
+				B89068962B99E70600DEECBD /* MPLUS1p-Bold.ttf */,
+				B89068972B99E70600DEECBD /* MPLUS1p-Black.ttf */,
+				B89068982B99E70600DEECBD /* MPLUS1p-Medium.ttf */,
+				B89068992B99E70600DEECBD /* OFL.txt */,
+				B890689A2B99E70600DEECBD /* MPLUS1p-Regular.ttf */,
+			);
+			path = Mplus1p;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +261,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B890689C2B99E70600DEECBD /* MPLUS1p-Light.ttf in Resources */,
 				B890686B2B95CB8E00DEECBD /* LaunchScreen.storyboard in Resources */,
+				B890689E2B99E70600DEECBD /* MPLUS1p-Bold.ttf in Resources */,
+				B89068A12B99E70600DEECBD /* OFL.txt in Resources */,
+				B89068A22B99E70600DEECBD /* MPLUS1p-Regular.ttf in Resources */,
+				B890689B2B99E70600DEECBD /* MPLUS1p-ExtraBold.ttf in Resources */,
+				B890689F2B99E70600DEECBD /* MPLUS1p-Black.ttf in Resources */,
+				B890689D2B99E70600DEECBD /* MPLUS1p-Thin.ttf in Resources */,
+				B89068A02B99E70600DEECBD /* MPLUS1p-Medium.ttf in Resources */,
 				B89068682B95CB8E00DEECBD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,9 +281,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89068A82B9DC87C00DEECBD /* SecondaryButton.swift in Sources */,
 				B89068732B95CC4E00DEECBD /* LoginViewController.swift in Sources */,
+				B89068A62B9DC51C00DEECBD /* PrimaryButton.swift in Sources */,
+				B89068842B99DEA800DEECBD /* RegisterView.swift in Sources */,
+				B89068872B99DF7A00DEECBD /* User.swift in Sources */,
+				B890688A2B99E01B00DEECBD /* DataManager.swift in Sources */,
+				B89068902B99E4A300DEECBD /* UIColor.swift in Sources */,
 				B89068782B95CD0100DEECBD /* LoginView.swift in Sources */,
 				B890685F2B95CB8B00DEECBD /* AppDelegate.swift in Sources */,
+				B890688D2B99E38400DEECBD /* PrimaryTextField.swift in Sources */,
+				B89068A42B99E71D00DEECBD /* UIFont.swift in Sources */,
+				B89068822B99DE8600DEECBD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
