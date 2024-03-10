@@ -29,6 +29,7 @@
 		B89068A42B99E71D00DEECBD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068A32B99E71D00DEECBD /* UIFont.swift */; };
 		B89068A62B9DC51C00DEECBD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068A52B9DC51C00DEECBD /* PrimaryButton.swift */; };
 		B89068A82B9DC87C00DEECBD /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068A72B9DC87C00DEECBD /* SecondaryButton.swift */; };
+		B89068AE2B9DD2B100DEECBD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89068AD2B9DD2B100DEECBD /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B89068A32B99E71D00DEECBD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		B89068A52B9DC51C00DEECBD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		B89068A72B9DC87C00DEECBD /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		B89068AD2B9DD2B100DEECBD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				B890687F2B95D6F400DEECBD /* Login */,
 				B89068802B99DE6700DEECBD /* Register */,
 				B890687B2B95CFAD00DEECBD /* Resources */,
+				B89068AD2B9DD2B100DEECBD /* AppCoordinator.swift */,
 				B890685E2B95CB8B00DEECBD /* AppDelegate.swift */,
 				B89068692B95CB8E00DEECBD /* LaunchScreen.storyboard */,
 				B890686C2B95CB8E00DEECBD /* Info.plist */,
@@ -283,6 +286,7 @@
 			files = (
 				B89068A82B9DC87C00DEECBD /* SecondaryButton.swift in Sources */,
 				B89068732B95CC4E00DEECBD /* LoginViewController.swift in Sources */,
+				B89068AE2B9DD2B100DEECBD /* AppCoordinator.swift in Sources */,
 				B89068A62B9DC51C00DEECBD /* PrimaryButton.swift in Sources */,
 				B89068842B99DEA800DEECBD /* RegisterView.swift in Sources */,
 				B89068872B99DF7A00DEECBD /* User.swift in Sources */,

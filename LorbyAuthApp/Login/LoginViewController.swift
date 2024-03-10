@@ -9,6 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    weak var coordinator: AppCoordinator? 
     private lazy var loginView = LoginView()
     
     override func loadView() {
@@ -17,5 +18,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginView.registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func registerButtonTapped() {
+        coordinator?.showRegisterScreen()
     }
 }

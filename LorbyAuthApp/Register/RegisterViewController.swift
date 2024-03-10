@@ -9,6 +9,7 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    weak var coordinator: AppCoordinator?
     private lazy var registerView = RegisterView()
     
     override func loadView() {

@@ -11,14 +11,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let loginViewController = LoginViewController()
-        let navigationController = UINavigationController(rootViewController: loginViewController)
-        let window = UIWindow()
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        self.window = window
+        window = UIWindow()
+        window?.rootViewController = UINavigationController()
+        
+        if let navigationController = window?.rootViewController as? UINavigationController {
+            appCoordinator = AppCoordinator(navigationController: navigationController)
+            appCoordinator?.showLoginScreen() // Start with the login screen
+        }
+        window?.makeKeyAndVisible()
         return true
     }
 }
