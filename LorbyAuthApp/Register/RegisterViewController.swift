@@ -18,6 +18,15 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
+        setupNavigationBar(title: "Регистрация")
+    }
+    
+    private func setupNavigationBar(title: String) {
+        let titleLabel = UILabel()
+        titleLabel.font = .customFont(.medium, size: 16)
+        titleLabel.text = title
+        titleLabel.textColor = .lightBlack
+        
+        navigationItem.titleView = titleLabel
     }
 }
