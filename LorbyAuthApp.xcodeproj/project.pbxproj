@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B81891982BB4050B00A3C366 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81891972BB4050B00A3C366 /* HomeView.swift */; };
+		B818919A2BB4051B00A3C366 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81891992BB4051B00A3C366 /* HomeViewController.swift */; };
 		B890685F2B95CB8B00DEECBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890685E2B95CB8B00DEECBD /* AppDelegate.swift */; };
 		B89068682B95CB8E00DEECBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89068672B95CB8E00DEECBD /* Assets.xcassets */; };
 		B890686B2B95CB8E00DEECBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89068692B95CB8E00DEECBD /* LaunchScreen.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B81891972BB4050B00A3C366 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B81891992BB4051B00A3C366 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B890685B2B95CB8B00DEECBD /* LorbyAuthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LorbyAuthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B890685E2B95CB8B00DEECBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B89068672B95CB8E00DEECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B81891962BB404E200A3C366 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B81891992BB4051B00A3C366 /* HomeViewController.swift */,
+				B81891972BB4050B00A3C366 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B89068522B95CB8B00DEECBD = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 				B890687D2B95D6CE00DEECBD /* Core */,
 				B890687F2B95D6F400DEECBD /* Login */,
 				B89068802B99DE6700DEECBD /* Register */,
+				B81891962BB404E200A3C366 /* Home */,
 				B890687B2B95CFAD00DEECBD /* Resources */,
 				B89068AD2B9DD2B100DEECBD /* AppCoordinator.swift */,
 				B890685E2B95CB8B00DEECBD /* AppDelegate.swift */,
@@ -290,6 +304,7 @@
 				B89068A82B9DC87C00DEECBD /* SecondaryButton.swift in Sources */,
 				B89068732B95CC4E00DEECBD /* LoginViewController.swift in Sources */,
 				B89068B02B9DE49700DEECBD /* LargeTitle.swift in Sources */,
+				B81891982BB4050B00A3C366 /* HomeView.swift in Sources */,
 				B89068AE2B9DD2B100DEECBD /* AppCoordinator.swift in Sources */,
 				B89068A62B9DC51C00DEECBD /* PrimaryButton.swift in Sources */,
 				B89068842B99DEA800DEECBD /* RegisterView.swift in Sources */,
@@ -297,6 +312,7 @@
 				B890688A2B99E01B00DEECBD /* DataManager.swift in Sources */,
 				B89068902B99E4A300DEECBD /* UIColor.swift in Sources */,
 				B89068782B95CD0100DEECBD /* LoginView.swift in Sources */,
+				B818919A2BB4051B00A3C366 /* HomeViewController.swift in Sources */,
 				B890685F2B95CB8B00DEECBD /* AppDelegate.swift in Sources */,
 				B890688D2B99E38400DEECBD /* PrimaryTextField.swift in Sources */,
 				B89068A42B99E71D00DEECBD /* UIFont.swift in Sources */,

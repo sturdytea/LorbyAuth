@@ -43,6 +43,9 @@ class RegisterView: UIView {
         backgroundColor = .white
         setupViews()
         setupConstraints()
+        createPasswordField.addTarget(self, action: #selector(createPasswordTextFieldDidChange), for: .editingChanged)
+        repeatPasswordField.addTarget(self, action: #selector(repeatPasswordTextFieldDidChange), for: .editingChanged)
+        [emailField, loginField].forEach({$0.addTarget(self, action: #selector(allTextFieldsDidChange), for: .editingChanged)})
     }
     
     func setupViews() {
@@ -65,6 +68,20 @@ class RegisterView: UIView {
         setupHints()
         scrollStack.addArrangedSubview(repeatPasswordField)
         scrollStack.addArrangedSubview(button)
+    }
+    
+    // Enables button if all textFields are fullfilled
+    @objc func allTextFieldsDidChange(_ textField: UITextField) {
+        guard
+            let email = emailField.text, !email.isEmpty,
+            let login = loginField.text, !login.isEmpty,
+            let password = createPasswordField.text, !password.isEmpty,
+            let repeatPassword = repeatPasswordField.text, !repeatPassword.isEmpty
+        else {
+            button.isEnabled = false
+            return
+        }
+        button.isEnabled = true
     }
     
     required init?(coder: NSCoder) {
@@ -90,6 +107,32 @@ private extension RegisterView {
     }
 }
 
+// MARK: - Password Validation
+private extension RegisterView {
+    
+    @objc func createPasswordTextFieldDidChange(_ textField: UITextField) {
+        let isValid = isValidPassword()
+    }
+    
+    @objc func repeatPasswordTextFieldDidChange(_ textField: UITextField) {
+        let isRepeating = isRepeatingPassword()
+    }
+    
+    func isValidPassword() -> Bool {
+        let passwordRegex = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,15}$"
+        let passwordCheck = NSPredicate(format: "SELF MATCHES %@",passwordRegex)
+        return passwordCheck.evaluate(with: createPasswordField.text)
+    }
+    
+    func isRepeatingPassword() -> Bool {
+        if createPasswordField.text == repeatPasswordField.text {
+            return true
+        }
+        return false
+    }
+}
+
+// MARK: - PasswordHintLabel
 class PasswordHintLabel: UILabel {
     
     let checkEmoji = "✅"
