@@ -10,6 +10,7 @@ import UIKit
 protocol Coordinator: AnyObject {
     func showLoginScreen()
     func showRegisterScreen()
+    func showHomeScreen()
 }
 
 class AppCoordinator: Coordinator {
@@ -30,5 +31,11 @@ class AppCoordinator: Coordinator {
         let registerViewController = RegisterViewController()
         registerViewController.coordinator = self
         navigationController?.pushViewController(registerViewController, animated: true)
+    }
+    
+    func showHomeScreen() {
+        let homeViewController = HomeViewController()
+        homeViewController.coordinator = self
+        navigationController?.pushViewController(homeViewController, animated: true)
     }
 }
