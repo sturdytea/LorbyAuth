@@ -56,6 +56,9 @@
 		B8A480252BE63C4D00FF8DF0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B8A480242BE63C4D00FF8DF0 /* FirebaseFirestoreSwift */; };
 		B8A480272BE63C4D00FF8DF0 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = B8A480262BE63C4D00FF8DF0 /* FirebaseFunctions */; };
 		B8A480292BE63C4D00FF8DF0 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B8A480282BE63C4D00FF8DF0 /* FirebaseFunctionsCombine-Community */; };
+		B8A4802F2BE656BD00FF8DF0 /* register-screenshot-iphone15.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A4802C2BE656BD00FF8DF0 /* register-screenshot-iphone15.png */; };
+		B8A480302BE656BD00FF8DF0 /* home-screenshot-iphone15.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A4802D2BE656BD00FF8DF0 /* home-screenshot-iphone15.png */; };
+		B8A480322BE656F300FF8DF0 /* login-screenshot-iphone15.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A480312BE656F300FF8DF0 /* login-screenshot-iphone15.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		B89068AD2B9DD2B100DEECBD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B89068AF2B9DE49700DEECBD /* LargeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitle.swift; sourceTree = "<group>"; };
 		B8A47FF92BE6234900FF8DF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8A4802C2BE656BD00FF8DF0 /* register-screenshot-iphone15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "register-screenshot-iphone15.png"; sourceTree = "<group>"; };
+		B8A4802D2BE656BD00FF8DF0 /* home-screenshot-iphone15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-screenshot-iphone15.png"; sourceTree = "<group>"; };
+		B8A480312BE656F300FF8DF0 /* login-screenshot-iphone15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-screenshot-iphone15.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 		B890687B2B95CFAD00DEECBD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B8A4802A2BE6565300FF8DF0 /* Screenshots */,
 				B89068672B95CB8E00DEECBD /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -270,6 +277,16 @@
 			path = Mplus1p;
 			sourceTree = "<group>";
 		};
+		B8A4802A2BE6565300FF8DF0 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				B8A4802D2BE656BD00FF8DF0 /* home-screenshot-iphone15.png */,
+				B8A480312BE656F300FF8DF0 /* login-screenshot-iphone15.png */,
+				B8A4802C2BE656BD00FF8DF0 /* register-screenshot-iphone15.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B890689C2B99E70600DEECBD /* MPLUS1p-Light.ttf in Resources */,
+				B8A480302BE656BD00FF8DF0 /* home-screenshot-iphone15.png in Resources */,
+				B8A480322BE656F300FF8DF0 /* login-screenshot-iphone15.png in Resources */,
+				B8A4802F2BE656BD00FF8DF0 /* register-screenshot-iphone15.png in Resources */,
 				B890686B2B95CB8E00DEECBD /* LaunchScreen.storyboard in Resources */,
 				B890689E2B99E70600DEECBD /* MPLUS1p-Bold.ttf in Resources */,
 				B89068A12B99E70600DEECBD /* OFL.txt in Resources */,
