@@ -32,11 +32,10 @@ class RegisterView: UIView {
         return view
     }()
     
-    private let emailField = PrimaryTextField("Введи адрес почты")
-    private let loginField = PrimaryTextField("Придумай логин")
-    private let createPasswordField = PrimaryTextField("Создай пароль", isHidden: true)
-    private let repeatPasswordField = PrimaryTextField("Повтори пароль", isHidden: true)
-    private let button = PrimaryButton("Далее", isEnabled: false)
+    let emailField = PrimaryTextField("Введи адрес почты")
+    let createPasswordField = PrimaryTextField("Создай пароль", isHidden: true)
+    let repeatPasswordField = PrimaryTextField("Повтори пароль", isHidden: true)
+    let button = PrimaryButton("Далее", isEnabled: false)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,7 +44,7 @@ class RegisterView: UIView {
         setupConstraints()
         createPasswordField.addTarget(self, action: #selector(createPasswordTextFieldDidChange), for: .editingChanged)
         repeatPasswordField.addTarget(self, action: #selector(repeatPasswordTextFieldDidChange), for: .editingChanged)
-        [emailField, loginField].forEach({$0.addTarget(self, action: #selector(allTextFieldsDidChange), for: .editingChanged)})
+        [emailField, createPasswordField, repeatPasswordField].forEach({$0.addTarget(self, action: #selector(allTextFieldsDidChange), for: .editingChanged)})
     }
     
     func setupViews() {
@@ -63,7 +62,6 @@ class RegisterView: UIView {
     
     private func configureStackView() {
         scrollStack.addArrangedSubview(emailField)
-        scrollStack.addArrangedSubview(loginField)
         scrollStack.addArrangedSubview(createPasswordField)
         setupHints()
         scrollStack.addArrangedSubview(repeatPasswordField)
@@ -71,10 +69,9 @@ class RegisterView: UIView {
     }
     
     // Enables button if all textFields are fullfilled
-    @objc func allTextFieldsDidChange(_ textField: UITextField) {
+    @objc func allTextFieldsDidChange() {
         guard
             let email = emailField.text, !email.isEmpty,
-            let login = loginField.text, !login.isEmpty,
             let password = createPasswordField.text, !password.isEmpty,
             let repeatPassword = repeatPasswordField.text, !repeatPassword.isEmpty
         else {
@@ -112,10 +109,13 @@ private extension RegisterView {
     
     @objc func createPasswordTextFieldDidChange(_ textField: UITextField) {
         let isValid = isValidPassword()
+        checkValidation(string: createPasswordField.text)
+        print(isValid)
     }
     
     @objc func repeatPasswordTextFieldDidChange(_ textField: UITextField) {
         let isRepeating = isRepeatingPassword()
+        print("Repeat? \(isRepeating)")
     }
     
     func isValidPassword() -> Bool {
@@ -130,12 +130,19 @@ private extension RegisterView {
         }
         return false
     }
+    
+    func checkValidation(string: String?) {
+        if (NSPredicate(format: "SELF MATCHES %@", ".*[A-Z]+.*").evaluate(with: string)) && (!NSPredicate(format: "SELF MATCHES %@", ".*[a-z]+.*").evaluate(with: string)) {
+            PasswordHintLabel(Hint.letterCases.rawValue).changeTextColor(color: .green)
+        }
+    }
 }
 
 // MARK: - PasswordHintLabel
 class PasswordHintLabel: UILabel {
     
     let checkEmoji = "✅"
+    let crossEmoji = "❌"
     
     init(_ text: String) {
         super.init(frame: .zero)
@@ -148,6 +155,10 @@ class PasswordHintLabel: UILabel {
         textAlignment = .left
         textColor = .mediumGray
         translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    public func changeTextColor(color: UIColor) {
+        textColor = color
     }
     
     required init?(coder: NSCoder) {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -19,6 +20,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar(title: "Регистрация")
+        registerView.button.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
     }
     
     private func setupNavigationBar(title: String) {
@@ -28,5 +30,19 @@ class RegisterViewController: UIViewController {
         titleLabel.textColor = .lightBlack
         
         navigationItem.titleView = titleLabel
+    }
+    
+    @objc
+    func registerButtonTapped() {
+        guard let email = registerView.emailField.text else { return }
+        guard let password = registerView.createPasswordField.text else { return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
+            if let e = error {
+                print("error")
+            } else {
+                self.coordinator?.showHomeScreen()
+            }
+        }
     }
 }

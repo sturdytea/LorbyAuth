@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appCoordinator?.showLoginScreen() // Start with the login screen
         }
         window?.makeKeyAndVisible()
+        
+        FirebaseApp.configure()
         return true
     }
 }

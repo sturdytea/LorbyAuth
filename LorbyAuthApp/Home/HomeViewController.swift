@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     weak var coordinator: AppCoordinator?
@@ -20,7 +21,8 @@ class HomeViewController: UIViewController {
         homeView.button.addTarget(self, action: #selector(logoutButtonTapped), for: .touchUpInside)
     }
     
-    @objc func logoutButtonTapped() {
+    @objc func logoutButtonTapped() throws {
+        try Auth.auth().signOut()
         coordinator?.showLoginScreen()
     }
 }

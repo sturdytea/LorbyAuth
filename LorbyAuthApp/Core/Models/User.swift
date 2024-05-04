@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct User {
+struct User: Identifiable, Codable {
     let id: Int
     let login: String
-    let password: String
     let email: String 
+}
+
+extension User {
+    static var MOCK_USER = User(id: 888, login: "sturdytea", email: "sturdytea@gmail.com")
 }

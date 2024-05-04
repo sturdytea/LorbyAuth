@@ -18,7 +18,7 @@ class LoginView: UIView {
     }()
     
     let welcomeText = LargeTitle("Вэлком бэк!")
-    let loginField = PrimaryTextField("Введи туда-сюда логин")
+    let emailField = PrimaryTextField("Введи туда-сюда почту")
     let passwordField = PrimaryTextField("Пароль (тоже введи)", isHidden: true)
     let loginButton = PrimaryButton("Войти")
     let registerButton = SecondaryButton("У меня еще нет аккаунта")
@@ -33,7 +33,7 @@ class LoginView: UIView {
     private func setupViews() {
         addSubview(image)
         addSubview(welcomeText)
-        addSubview(loginField)
+        addSubview(emailField)
         addSubview(passwordField)
         addSubview(loginButton)
         addSubview(registerButton)
@@ -54,13 +54,13 @@ private extension LoginView {
             welcomeText.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 32),
             welcomeText.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            loginField.topAnchor.constraint(equalTo: welcomeText.bottomAnchor, constant: 32),
-            loginField.centerXAnchor.constraint(equalTo: centerXAnchor),
-            loginField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            emailField.topAnchor.constraint(equalTo: welcomeText.bottomAnchor, constant: 32),
+            emailField.centerXAnchor.constraint(equalTo: centerXAnchor),
+            emailField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
             
-            passwordField.topAnchor.constraint(equalTo: loginField.bottomAnchor, constant: 16),
+            passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 16),
             passwordField.centerXAnchor.constraint(equalTo: centerXAnchor),
-            passwordField.leadingAnchor.constraint(equalTo: loginField.leadingAnchor),
+            passwordField.leadingAnchor.constraint(equalTo: emailField.leadingAnchor),
 
             loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 24),
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),

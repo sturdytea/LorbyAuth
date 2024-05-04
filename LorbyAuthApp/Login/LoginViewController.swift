@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -21,6 +22,21 @@ class LoginViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationController?.navigationBar.tintColor = .lightBlack
         loginView.registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
+        loginView.loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func loginButtonTapped() {
+        guard let email = loginView.emailField.text else { return }
+        guard let password = loginView.passwordField.text else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { firebaseResult, error in
+            if let e = error {
+                print("error")
+            } else {
+                self.coordinator?.showHomeScreen()
+            }
+        }
+        
     }
     
     @objc func registerButtonTapped() {
